@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap');
+
+body{
+    background: linear-gradient(to bottom right, #66ffcc 0%, #cc99ff 61%);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.img {
+    width: 500px;
+    height: 400px;
+}
+
+#sld{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px dashed green;
+}
+
+#org-details {
+    font-family: 'Literata', serif;
+    display: inline-block;
+}
+
+h1 {
+    display: inline;
+    background: lightcoral;
+    font-family: 'Bree Serif', serif;
+    color: navy;
+    border-radius: 30%;
+    border-style: ridge;
+}
+
+nav {
+    display: inline-flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgba(0, 153, 255, 0.897);
+}
+
+nav ul li a:hover {
+    color:mediumblue;
+}
+
+.head-office-address {
+    font-family: 'Libre Baskerville', serif;
+    border: 5px solid black;
+    background: gray;
+}
+
+#donation-link {
+    text-decoration: none;
+}
+
+#donation-link:hover{
+    color: red;
+}
+
+#mem-login-link {
+    text-decoration: none;
+}
+
+#mem-login-link:hover {
+    color: red;
+}
+
+.main-sub-header {
+    text-decoration: none;
+}
+
+.sub-header {
+    text-align: center;
+    font-size: 275%;
+    color: gold;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.donation_form {
+    list-style-type: none;
+    text-align: center;
+}
+
+.donation_form li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.add_items_button {
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: 'Grandstander', cursive;
+}
+
+#vehicle {
+    font-size: 1em;
+}
+
+.location {
+    list-style-type: none;
+}
+
+/* Should figure out why moz-appearance and textfield are stroke off in Vscode.*/
+#pincode {
+    -moz-appearance: textfield;
+}
+
+#place_order {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Grandstander', cursive;
+}
+
+.sub-heads {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.125em;
+}

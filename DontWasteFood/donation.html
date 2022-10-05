@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class='main-sub-header'>Don't Waste Food</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <h3 class='sub-header'>Donation</h3>
+    <ul class='donation_form'>
+        <li>
+            <p class="sub-heads">Quantity of food to donate</p>
+            <form action="/action_page.php">
+                <label for="quantity">Total Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1">
+            </form>
+        </li>
+        <li>
+            <p class="sub-heads">Quantities of food items(individual)</p>
+            <form action="/action_page.php">
+                <label for="food_item">Food item:</label>
+                <input type="text" id="food_item" name="food_item">
+                <label for="indiv_quantity">Quantity:</label>
+                <input type="number" id="indiv_quantity" name="indiv_quantity">
+            </form>
+            <button onclick="addtag()" class="add_items_button">Add Items</button>
+        </li>
+        <li>
+            <p class="sub-heads">Preferred vehicle of transport</p>
+            <p><strong>NOTE: </strong>Vehicle may change depending on availability & quantity of food</p>
+            <form action="/action_page.php">
+                <label for="vehicle">Vehicle:</label>
+                <select name="vehicle" id="vehicle">
+                    <option value="bike">Bike</option>
+                    <option value="auto">Auto</option>
+                    <option value="semi_truck">Semi Truck</option>
+                    <option value="big_truck">Big Truck</option>
+                </select>
+            </form>
+        </li>
+        <li>
+            <p class="sub-heads">Location</p>
+            <form action="/action_page.php">
+                <ul class="location">
+                    <li>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address">
+                    </li>
+                    <li>
+                        <label for="landmark">Landmark:</label>
+                        <input type="text" id="landmark" name="landmark">
+                    </li>
+                    <li>
+                        <label for="colony">Colony:</label>
+                        <input type="text" id="colony" name="colony">
+                    </li>
+                    <li>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city">
+                    </li>
+                    <li>
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state">
+                    </li>
+                    <li>
+                        <label for="pincode">Pincode:</label>
+                        <input type="number" id="pincode" name="pincode">
+                    </li>
+                </ul>
+                <input type="submit" id="place_order" value="Place Order">
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
